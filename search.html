@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>DNS Strict Privacy</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
+
+	<!-- Fonts and icons -->
+	<script src="assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['./assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/atlantis.min.css">
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+	<div class="wrapper sidebar_minimize">
+		<div class="main-header">
+			<!-- Logo Header -->
+			<div class="logo-header" data-background-color="blue">
+				
+<!--				<a href="index-1.html" class="logo">-->
+<!--					<img src="./assets/img/logo.svg" alt="navbar brand" class="navbar-brand">-->
+<!--				</a>-->
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<!-- End Logo Header -->
+
+			<!-- Navbar Header -->
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+
+
+			</nav>
+			<!-- End Navbar -->
+		</div>
+
+		<!-- Sidebar -->
+		<div class="sidebar sidebar-style-2">			
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+
+					<ul class="nav nav-primary">
+						<li class="nav-item ">
+							<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+								<i class="fas fa-desktop"></i>
+								<p>DNS Privacy</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="dashboard">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="index.html">
+											<span class="sub-item">Adoption</span>
+										</a>
+									</li>
+									<li>
+										<a href="doth-configuration.html">
+											<span class="sub-item">Configuration</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav-item ">
+							<a href="dns-sp.html">
+								<i class="fas fa-chart-bar"></i>
+								<p>DNS Strict Privacy</p>
+
+							</a>
+
+						</li>
+
+
+						<li class="nav-item ">
+							<a data-toggle="collapse" href="#Centralization" class="collapsed" aria-expanded="false">
+								<i class="fas fa-map-marked"></i>
+								<p>Centralization</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="Centralization">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="Centralization.html">
+											<span class="sub-item">Centralization Problem</span>
+										</a>
+									</li>
+									<li>
+										<a href="World-Map.html">
+											<span class="sub-item">World Map</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav-item active submenu">
+							<a  href="search.html">
+								<i class="fas fa-globe-americas"></i>
+								<p>Search Engine</p>
+
+							</a>
+
+						</li>
+
+						<li class="nav-item">
+							<a href="Paper.html">
+								<i class="fas fa-file-alt"></i>
+								<p>Paper</p>
+
+							</a>
+
+						</li>
+
+						<li class="nav-item">
+							<a  href="Team.html">
+								<i class="fas fa-users"></i>
+								<p>Team Member</p>
+
+							</a>
+
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+
+
+
+		<div class="main-panel">
+			<div class="content">
+				<div class="panel-header bg-primary-gradient">
+					<div class="page-inner py-5">
+<!--						<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">-->
+						<div align="center">
+								<h1 class="text-white pb-2 fw-bold">DNS-SP Server Search Engine and Recommender System</h1>
+							<h3 class="text-white op-7 mb-2">You can visit <a href="https://dns-sp.info"><strong style="text-decoration: underline">dns-sp.info</strong></a>  for search and recommendation services.</h3>
+
+							<h3 class="text-white op-7 mb-2"> Our search engine and recommendation system are still being refined and optimized.
+								If you have any questions, please contact us: lrxgoat@gmail.com
+							</h3>
+						</div>
+
+
+<!--						</div>-->
+					</div>
+				</div>
+
+
+				<div class="row">
+						<div class="col-md-6">
+							<div class="card full-height">
+								<div class="card-header">
+									<div align="center"><div class="card-title">Search Engine</div></div>
+								</div>
+								<div class="card-body">
+									<ol class="activity-feed">
+										<li class="feed-item feed-item-secondary">
+
+											<h4>34 different keyword queries.</h4>
+										</li>
+										<li class="feed-item feed-item-success">
+											<h4>AND, OR, PRIORITY combinational logic operations.</h4>
+										</li>
+										<li class="feed-item feed-item-info">
+											<h4>English and Chinese fuzzy matching and case insensitivity.</h4>
+										</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+
+					<div class="col-md-6">
+							<div class="card full-height">
+								<div class="card-header">
+									<div align="center"><div class="card-title">Recommender System</div></div>
+								</div>
+								<div class="card-body">
+									<ol class="activity-feed">
+										<li class="feed-item feed-item-secondary">
+
+											<h4>IP or any geographic location query.</h4>
+										</li>
+										<li class="feed-item feed-item-success">
+											<h4>Intelligently recommend close and reliable servers.</h4>
+										</li>
+										<li class="feed-item feed-item-info">
+											<h4>English and Chinese fuzzy matching and case insensitivity.</h4>
+										</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+				</div>
+
+
+
+
+
+
+
+				<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<div align="center"><h1 >How To Use</h1></div>
+								</div>
+								<div class="card-body">
+									 <div align="center">
+										<img style="width: 100%" src = "./img/dns-sp-info.png">
+									</div>
+									<br /><br />
+
+									<ol class="activity-feed">
+										<li class="feed-item feed-item-secondary">
+											<span class="text"><h3>① Select search or recommendation services</h3></span>
+										</li>
+										<li class="feed-item feed-item-success">
+											<span class="text"><h3>② Enter keywords and query formats supported by search and recommendation services.</h3></span>
+										</li>
+										<li class="feed-item feed-item-info">
+											<span class="text"><h3>③ Choose to query DOT Strict Privacy Server or DOH Strict Privacy Server.</h3></span>
+										</li>
+										<li class="feed-item feed-item-warning">
+											<span class="text"><h3>④ Click search and wait for a while.</h3></span>
+
+										</li>
+
+									</ol>
+
+
+
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+					<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<i class="fas fa-chart-bar">ZZZ</i>
+									<div align="center"><h1 >Search Assistant</h1></div>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<div class="col-10 col-md-2">
+											<div class="nav flex-column nav-pills nav-secondary nav-pills-no-bd" id="v-pills-tab-without-border" role="tablist" aria-orientation="vertical">
+<!--										<li class="nav-item">-->
+											<a class="nav-link active" id="pills-tls-tab-nobd-doh" data-toggle="pill" href="#pills-tls-nobd-doh" role="tab" aria-controls="pills-tls-nobd-doh" aria-selected="true">Basic</a>
+<!--										</li>-->
+<!--										<li class="nav-item">-->
+											<a class="nav-link" id="pills-cert-tab-nobd-doh" data-toggle="pill" href="#pills-cert-nobd-doh" role="tab" aria-controls="pills-cert-nobd-doh" aria-selected="false">Geographical Location</a>
+<!--										</li>-->
+<!--										<li class="nav-item">-->
+											<a class="nav-link" id="pills-dane-tab-nobd-doh" data-toggle="pill" href="#pills-dane-nobd-doh" role="tab" aria-controls="pills-dane-nobd-doh" aria-selected="false">Security Configuration</a>
+<!--										</li>-->
+<!--										<li class="nav-item">-->
+											<a class="nav-link" id="pills-ct-tab-nobd-doh" data-toggle="pill" href="#pills-ct-nobd-doh" role="tab" aria-controls="pills-ct-nobd-doh" aria-selected="false">Exclusively for DOH</a>
+<!--										</li>-->
+<!--										<li class="nav-item">-->
+											<a class="nav-link" id="pills-revoke-tab-nobd-doh" data-toggle="pill" href="#pills-revoke-nobd-doh" role="tab" aria-controls="pills-revoke-nobd-doh" aria-selected="false">Logic Operation</a>
+<!--										</li>-->
+<!--										<li class="nav-item">-->
+											<a class="nav-link" id="pills-down-tab-nobd-doh" data-toggle="pill" href="#pills-down-nobd-doh" role="tab" aria-controls="pills-down-nobd-doh" aria-selected="false">Recommended System</a>
+
+													</div>
+										</div>
+									<div class="col-2 col-md-10">
+											<div class="tab-content" id="v-pills-without-border-tabContent">
+										<div class="tab-pane fade show active" id="pills-tls-nobd-doh" role="tabpanel" aria-labelledby="pills-tls-tab-nobd-doh">
+											<div class="card">
+
+																	<div class="card-body">
+																		<div class="table-responsive">
+																			<table class="table mt-3" >
+																				<thead>
+																					<tr>
+																						<th>#</th>
+																						<th>Keyword</th>
+																						<th>Meaning</th>
+																						<th>example</th>
+																					</tr>
+																				</thead>
+
+																				 <tbody>
+																				 	  <tr>
+																						<td>1</td>
+																						<td>DOT</td>
+																					 	<td>Search DOT Servers</td>
+																					 	<td>Manual selection</td>
+																					  </tr>
+																					  <tr>
+																						<td>2</td>
+																						<td>DOH</td>
+																					 	<td>Search DOH Servers</td>
+																					 	<td>Manual selection</td>
+																					  </tr>
+																					  <tr>
+																						<td>3</td>
+																						<td>ip</td>
+																					 	<td>Search server IP</td>
+																					 	<td>ip:"8.8.8.8"</td>
+																					  </tr>
+																					  <tr>
+																						<td>4</td>
+																						<td>domain</td>
+																					 	<td>Search server Domain</td>
+																					 	<td>domain:"dns.google"</td>
+																					  </tr>
+																				 </tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+
+										</div>
+										<div class="tab-pane fade" id="pills-cert-nobd-doh" role="tabpanel" aria-labelledby="pills-cert-tab-nobd-doh">
+											<div class="card">
+
+																	<div class="card-body">
+																		<div class="table-responsive">
+																			<table class="table mt-3" >
+																				<thead>
+																					<tr>
+																						<th>#</th>
+																						<th>Keyword</th>
+																						<th>Meaning</th>
+																						<th>example</th>
+																					</tr>
+																				</thead>
+
+																				 <tbody>
+																				 	  <tr>
+																						<td>1</td>
+																						<td>country</td>
+																					 	<td>Search Server Country</td>
+																					 	<td>country:"china"</td>
+																					  </tr>
+																					  <tr>
+																						<td>2</td>
+																						<td>city</td>
+																					 	<td>Search Server City</td>
+																					 	<td>city:"hangzhou"</td>
+																					  </tr>
+																					  <tr>
+																						<td>3</td>
+																						<td>countryCode</td>
+																					 	<td>Search Server CountryCode</td>
+																					 	<td>countryCode:"CN"</td>
+																					  </tr>
+																					  <tr>
+																						<td>4</td>
+																						<td>org</td>
+																					 	<td>Search Server Organization</td>
+																					 	<td>org:"google"</td>
+																					  </tr>
+																					  <tr>
+																						<td>5</td>
+																						<td>isp</td>
+																					 	<td>Search Server ISP</td>
+																					 	<td>isp:"amazon"</td>
+																					  </tr>
+																				 </tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+
+										</div>
+										<div class="tab-pane fade" id="pills-dane-nobd-doh" role="tabpanel" aria-labelledby="pills-dane-tab-nobd-doh">
+																<div class="card">
+
+																	<div class="card-body">
+																		<div class="table-responsive">
+																			<table class="table mt-3" >
+																				<thead>
+																					<tr>
+																						<th>#</th>
+																						<th>Keyword</th>
+																						<th>Meaning</th>
+																						<th>example</th>
+																					</tr>
+																				</thead>
+
+																				 <tbody>
+																				 	  <tr>
+																						<td>1</td>
+																						<td>level</td>
+																					 	<td>Search Server Security Level</td>
+																					 	<td>level:"A"</td>
+																					  </tr>
+																					  <tr>
+																						<td>2</td>
+																						<td>certValid</td>
+																					 	<td>Search server's certificate validity</td>
+																					 	<td>certValid:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>3</td>
+																						<td>tlsVersion</td>
+																					 	<td>Search server's tls version</td>
+																					 	<td>tlsVersion:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>4</td>
+																						<td>CT</td>
+																					 	<td>Search server whether supports CT</td>
+																					 	<td>CT:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>5</td>
+																						<td>crLs</td>
+																					 	<td>Search server whether supports CRL</td>
+																					 	<td>crLs:"true"</td>
+																					  </tr>
+																				      <tr>
+																						<td>6</td>
+																						<td>ocsp</td>
+																					 	<td>Search server whether supports OCSP</td>
+																					 	<td>ocsp:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>7</td>
+																						<td>ocspStapling</td>
+																					 	<td>Search server whether supports OCSPStapling</td>
+																					 	<td>ocspStapling:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>8</td>
+																						<td>ocspMustStaple</td>
+																					 	<td>Search server whether supports OCSP Must-Staple</td>
+																					 	<td>ocspMustStaple:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>9</td>
+																						<td>scsv</td>
+																					 	<td>Search server whether supports SCSV</td>
+																					 	<td>scsv:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>10</td>
+																						<td>tls13_down_12</td>
+																					 	<td>Search server whether supports TLS 1.3 downgrade protection</td>
+																					 	<td>tls13_down_12:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>11</td>
+																						<td>tlsa_flag</td>
+																					 	<td>Search server whether supports TLSA</td>
+																					 	<td>tlsa_flag:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>12</td>
+																						<td>caa_flag</td>
+																					 	<td>Search server whether supports CAA</td>
+																					 	<td>caa_flag:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>13</td>
+																						<td>dane</td>
+																					 	<td>Search server whether supports DANE</td>
+																					 	<td>dane:"true"</td>
+																					  </tr>
+																				      <tr>
+																						<td>14</td>
+																						<td>tfo</td>
+																					 	<td>Search server whether supports TFO</td>
+																					 	<td>tfo:"true"</td>
+																					  </tr>
+
+																				 </tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+
+										</div>
+										<div class="tab-pane fade" id="pills-ct-nobd-doh" role="tabpanel" aria-labelledby="pills-ct-tab-nobd-doh">
+											<div class="card">
+
+																	<div class="card-body">
+																		<div class="table-responsive">
+																			<table class="table mt-3" >
+																				<thead>
+																					<tr>
+																						<th>#</th>
+																						<th>Keyword</th>
+																						<th>Meaning</th>
+																						<th>example</th>
+																					</tr>
+																				</thead>
+
+																				 <tbody>
+																				 	  <tr>
+																						<td>1</td>
+																						<td>expect_ct</td>
+																					 	<td>Search DOH server whether supports Expect-CT</td>
+																					 	<td>expect_ct:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>2</td>
+																						<td>hsts</td>
+																					 	<td>Search DOH server whether supports HSTS</td>
+																					 	<td>hsts:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>3</td>
+																						<td>dns-query</td>
+																					 	<td>Search whether the DOH server path template is /dns-query</td>
+																					 	<td>dns-query:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>4</td>
+																						<td>query</td>
+																					 	<td>Search whether the DOH server path template is /query</td>
+																					 	<td>query:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>5</td>
+																						<td>resolve</td>
+																					 	<td>Search whether the DOH server path template is /resolve</td>
+																					 	<td>resolve:"true"</td>
+																					  </tr>
+																				      <tr>
+																						<td>6</td>
+																						<td>none_path</td>
+																					 	<td>Search whether the DOH server path template is /</td>
+																					 	<td>none_path:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>7</td>
+																						<td>get</td>
+																					 	<td>Search DOH server whether supports GET</td>
+																					 	<td>get:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>8</td>
+																						<td>post</td>
+																					 	<td>Search DOH server whether supports POST</td>
+																					 	<td>post:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>9</td>
+																						<td>json</td>
+																					 	<td>Search DOH server whether supports JSON</td>
+																					 	<td>json:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>10</td>
+																						<td>http1_1</td>
+																					 	<td>Search DOH server whether supports HTTP 1.1</td>
+																					 	<td>http1_1:"true"</td>
+																					  </tr>
+																					  <tr>
+																						<td>11</td>
+																						<td>http2</td>
+																					 	<td>Search DOH server whether supports HTTP 2.0</td>
+																					 	<td>http2:"true"</td>
+																					  </tr>
+
+
+																				 </tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+
+										</div>
+
+										<div class="tab-pane fade" id="pills-revoke-nobd-doh" role="tabpanel" aria-labelledby="pills-revoke-tab-nobd-doh">
+											<div class="card">
+
+																	<div class="card-body">
+																		<div class="table-responsive">
+																			<table class="table mt-3" >
+																				<thead>
+																					<tr>
+																						<th>#</th>
+																						<th>Keyword</th>
+																						<th>Meaning</th>
+																						<th>example</th>
+																					</tr>
+																				</thead>
+
+																				 <tbody>
+																				 	  <tr>
+																						<td>1</td>
+																						<td>+</td>
+																					 	<td>AND</td>
+																					 	<td>level:"A"+country:"china"</td>
+																					  </tr>
+																					  <tr>
+																						<td>2</td>
+																						<td>|</td>
+																					 	<td>OR</td>
+																					 	<td>level:"A"|country:"china"</td>
+																					  </tr>
+																					  <tr>
+																						<td>3</td>
+																						<td>()</td>
+																					 	<td>priority</td>
+																					 	<td>certValid:"true"+(level:"A"|country:"china")</td>
+																					  </tr>
+
+																				 </tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+
+										</div>
+										<div class="tab-pane fade" id="pills-down-nobd-doh" role="tabpanel" aria-labelledby="pills-down-tab-nobd-doh">
+											<div class="card">
+
+																	<div class="card-body">
+																		<div class="table-responsive">
+																			<table class="table mt-3" >
+																				<thead>
+																					<tr>
+																						<th>#</th>
+																						<th>Keyword</th>
+																						<th>Meaning</th>
+																						<th>example</th>
+																					</tr>
+																				</thead>
+
+																				 <tbody>
+																				 	  <tr>
+																						<td>1</td>
+																						<td>IP</td>
+																					 	<td>Recommend DNS-SP server according to IP address</td>
+																					 	<td>ip:"1.1.1.1"</td>
+																					  </tr>
+																					  <tr>
+																						<td>2</td>
+																						<td>location</td>
+																					 	<td>Recommend DNS-SP server according to geographic location</td>
+																					 	<td>location:"Hangzhou,china"</td>
+																					  </tr>
+
+																				 </tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+
+										</div>
+
+
+
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+			</div>
+		</div>
+		
+		
+		<!-- Custom template | don't include it in your project! -->
+
+		<!-- End Custom template -->
+	</div>
+	<!--   Core JS Files   -->
+	<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="assets/js/core/popper.min.js"></script>
+	<script src="assets/js/core/bootstrap.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+	<!-- jQuery Scrollbar -->
+	<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+
+	<!-- Chart JS -->
+	<script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+	<!-- jQuery Sparkline -->
+	<script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+	<!-- Chart Circle -->
+	<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+	<!-- Datatables -->
+	<script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+	<!-- Bootstrap Notify -->
+	<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+	<!-- jQuery Vector Maps -->
+	<script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+	<script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+	<!-- Sweet Alert -->
+	<script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+	<!-- Atlantis JS -->
+	<script src="assets/js/atlantis.min.js"></script>
+
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="assets/js/setting-demo.js"></script>
+	<script src="assets/js/demo.js"></script>
+	<script>
+		$('#lineChart').sparkline([102,109,120,99,110,105,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: '#177dff',
+			fillColor: 'rgba(23, 125, 255, 0.14)'
+		});
+
+		$('#lineChart2').sparkline([99,125,122,105,110,124,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: '#f3545d',
+			fillColor: 'rgba(243, 84, 93, .14)'
+		});
+
+		$('#lineChart3').sparkline([105,103,123,100,95,105,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: '#ffa534',
+			fillColor: 'rgba(255, 165, 52, .14)'
+		});
+	</script>
+
+<script >
+		$(document).ready(function() {
+			$('#basic-datatables').DataTable({
+			});
+
+			$('#multi-filter-select').DataTable( {
+				"pageLength": 5,
+				initComplete: function () {
+					this.api().columns().every( function () {
+						var column = this;
+						var select = $('<select class="form-control"><option value=""></option></select>')
+						.appendTo( $(column.footer()).empty() )
+						.on( 'change', function () {
+							var val = $.fn.dataTable.util.escapeRegex(
+								$(this).val()
+								);
+
+							column
+							.search( val ? '^'+val+'$' : '', true, false )
+							.draw();
+						} );
+
+						column.data().unique().sort().each( function ( d, j ) {
+							select.append( '<option value="'+d+'">'+d+'</option>' )
+						} );
+					} );
+				}
+			});
+
+			// Add Row
+			$('#add-row').DataTable({
+				"pageLength": 5,
+			});
+
+			var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
+
+			$('#addRowButton').click(function() {
+				$('#add-row').dataTable().fnAddData([
+					$("#addName").val(),
+					$("#addPosition").val(),
+					$("#addOffice").val(),
+					action
+					]);
+				$('#addRowModal').modal('hide');
+
+			});
+		});
+	</script>
+
+<script >
+		$(document).ready(function() {
+			$('#basic-datatables-1').DataTable({
+			});
+
+			$('#multi-filter-select').DataTable( {
+				"pageLength": 5,
+				initComplete: function () {
+					this.api().columns().every( function () {
+						var column = this;
+						var select = $('<select class="form-control"><option value=""></option></select>')
+						.appendTo( $(column.footer()).empty() )
+						.on( 'change', function () {
+							var val = $.fn.dataTable.util.escapeRegex(
+								$(this).val()
+								);
+
+							column
+							.search( val ? '^'+val+'$' : '', true, false )
+							.draw();
+						} );
+
+						column.data().unique().sort().each( function ( d, j ) {
+							select.append( '<option value="'+d+'">'+d+'</option>' )
+						} );
+					} );
+				}
+			});
+
+			// Add Row
+			$('#add-row').DataTable({
+				"pageLength": 5,
+			});
+
+			var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
+
+			$('#addRowButton').click(function() {
+				$('#add-row').dataTable().fnAddData([
+					$("#addName").val(),
+					$("#addPosition").val(),
+					$("#addOffice").val(),
+					action
+					]);
+				$('#addRowModal').modal('hide');
+
+			});
+		});
+	</script>
+</body>
+</html>

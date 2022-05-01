@@ -1,0 +1,3 @@
+odvr.nic.cz,doh
+rethinkdns.com,configure
+neatdns.ustclug.org,resolve

@@ -1,0 +1,12 @@
+1,https://dnsprivacy.org/public_resolvers/
+2,https://kb.adguard.com/en/general/dns-providers
+3,https://github.com/curl/curl/wiki/DNS-over-HTTPS
+4,https://wiki.ipfire.org/dns/public-servers
+5,https://github.com/mili-tan/AuroraDNS.GUI/blob/5a03b4d02d7081ea63ec4857b6bc1eb60e2808ce/List/DoH.list
+6,https://github.com/oneoffdallas/dohservers
+7,https://dns.sb/doh/
+8,https://www.dnslify.com/services/resolver/
+9,https://libredns.gr/
+10,https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-tls/
+11,https://www.pacnog.org/pacnog24/presentations/DoT-DoH-DNS-Privacy.pdf
+12,https://applied-privacy.net/services/dns/

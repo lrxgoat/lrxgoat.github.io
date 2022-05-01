@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>DNS Strict Privacy</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
+
+	<!-- Fonts and icons -->
+	<script src="assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['./assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/atlantis.min.css">
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+	<div class="wrapper sidebar_minimize">
+		<div class="main-header">
+			<!-- Logo Header -->
+			<div class="logo-header" data-background-color="blue">
+				
+<!--				<a href="index-1.html" class="logo">-->
+<!--					<img src="./assets/img/logo.svg" alt="navbar brand" class="navbar-brand">-->
+<!--				</a>-->
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<!-- End Logo Header -->
+
+			<!-- Navbar Header -->
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+
+
+			</nav>
+			<!-- End Navbar -->
+		</div>
+
+		<!-- Sidebar -->
+		<div class="sidebar sidebar-style-2">			
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+
+					<ul class="nav nav-primary">
+						<li class="nav-item ">
+							<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+								<i class="fas fa-desktop"></i>
+								<p>DNS Privacy</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="dashboard">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="index.html">
+											<span class="sub-item">Adoption</span>
+										</a>
+									</li>
+									<li>
+										<a href="doth-configuration.html">
+											<span class="sub-item">Configuration</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav-item ">
+							<a href="dns-sp.html">
+								<i class="fas fa-chart-bar"></i>
+								<p>DNS Strict Privacy</p>
+
+							</a>
+
+						</li>
+
+
+						<li class="nav-item active submenu">
+							<a data-toggle="collapse" href="#Centralization" class="collapsed" aria-expanded="false">
+								<i class="fas fa-map-marked"></i>
+								<p>Centralization</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="Centralization">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="Centralization.html">
+											<span class="sub-item">Centralization Problem</span>
+										</a>
+									</li>
+									<li>
+										<a href="World-Map.html">
+											<span class="sub-item">World Map</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a  href="search.html">
+								<i class="fas fa-globe-americas"></i>
+								<p>Search Engine</p>
+
+							</a>
+
+						</li>
+
+						<li class="nav-item">
+							<a  href="Paper.html">
+								<i class="fas fa-file-alt"></i>
+								<p>Paper</p>
+
+							</a>
+
+						</li>
+
+						<li class="nav-item">
+							<a  href="Team.html">
+								<i class="fas fa-users"></i>
+								<p>Team Member</p>
+
+							</a>
+
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+
+		<div class="main-panel">
+			<div class="content">
+				<div class="panel-header bg-primary-gradient">
+					<div class="page-inner py-5">
+<!--						<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">-->
+						<div align="center">
+
+							<h1 class="text-white pb-2 fw-bold">DNS-SP Server World Map</h1>
+							</div>
+							<h3 class="text-white op-7 mb-2">We classify servers into four levels based on the security benefits and deployment complexity of TLS/HTTPS-related features,
+								helping internet users to choose reliable DNS Strict Privacy servers to alleviate the centralization problem
+								(detailed grading criteria are presented in our paper).
+								If you need to get DNS-SP server search and recommendation service, please visit our <a href="https://dns-sp.info" style="color: white;text-decoration: underline"> search engine</a>.
+							</h3>
+
+
+<!--						</div>-->
+					</div>
+				</div>
+
+
+
+
+				<div class="col-md-12">
+							<div class="card">
+<!--								<div class="card-header">-->
+<!--									<h2>Server Security Level</h2>-->
+<!--								</div>-->
+								<div class="card-body">
+									 <h3><img width="30" height="40" src = "./maps/green.png"> &nbsp&nbsp  Level-S servers provide the best security protection, and we mark them with green dots on the map.</h3>
+                                <h3> <img width="30" height="40" src = "./maps/blue.png"> &nbsp&nbsp  Level-A servers provide relatively security protection, and we mark them with blue dots on the map.</h3>
+                                <h3><img width="30" height="40" src = "./maps/orange.png"> &nbsp&nbsp	Level-B is the minimum requirement for a server to meet secure transmission, and we mark them with orange dots on the map.</h3>
+                               <h3> <img width="30" height="40" src = "./maps/red.png"> &nbsp&nbsp Level-C servers do not meet the requirements for secure transmission, and we mark them with red dots on the map.</h3>
+
+
+								</div>
+							</div>
+						</div>
+
+
+				<div class="col-md-12">
+					<div class="card">
+								<div class="card-header">
+									<div align="center"> <h2>DOT-SP Server</h2></div>
+								</div>
+								<div class="card-body">
+									<div align="center"> <iframe style="border: 0;" width="100%" height="600px"  src="./maps/DOT-SP-map.html"  ></iframe></div>
+
+								</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-md-12">
+					<div class="card">
+								<div class="card-header">
+									<div align="center"> <h2>DOH-SP Server</h2></div>
+								</div>
+								<div class="card-body">
+									<div align="center"> <iframe style="border: 0;" width="100%" height="600px"  src="./maps/DOH-SP-map.html"  ></iframe></div>
+
+								</div>
+					</div>
+				</div>
+
+
+
+
+
+			</div>
+		</div>
+		
+		
+		<!-- Custom template | don't include it in your project! -->
+
+		<!-- End Custom template -->
+	</div>
+	<!--   Core JS Files   -->
+	<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="assets/js/core/popper.min.js"></script>
+	<script src="assets/js/core/bootstrap.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+	<!-- jQuery Scrollbar -->
+	<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+
+	<!-- Chart JS -->
+	<script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+	<!-- jQuery Sparkline -->
+	<script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+	<!-- Chart Circle -->
+	<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+	<!-- Datatables -->
+	<script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+	<!-- Bootstrap Notify -->
+	<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+	<!-- jQuery Vector Maps -->
+	<script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+	<script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+	<!-- Sweet Alert -->
+	<script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+	<!-- Atlantis JS -->
+	<script src="assets/js/atlantis.min.js"></script>
+
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="assets/js/setting-demo.js"></script>
+	<script src="assets/js/demo.js"></script>
+	<script>
+		$('#lineChart').sparkline([102,109,120,99,110,105,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: '#177dff',
+			fillColor: 'rgba(23, 125, 255, 0.14)'
+		});
+
+		$('#lineChart2').sparkline([99,125,122,105,110,124,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: '#f3545d',
+			fillColor: 'rgba(243, 84, 93, .14)'
+		});
+
+		$('#lineChart3').sparkline([105,103,123,100,95,105,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: '#ffa534',
+			fillColor: 'rgba(255, 165, 52, .14)'
+		});
+	</script>
+
+<script >
+		$(document).ready(function() {
+			$('#basic-datatables').DataTable({
+			});
+
+			$('#multi-filter-select').DataTable( {
+				"pageLength": 5,
+				initComplete: function () {
+					this.api().columns().every( function () {
+						var column = this;
+						var select = $('<select class="form-control"><option value=""></option></select>')
+						.appendTo( $(column.footer()).empty() )
+						.on( 'change', function () {
+							var val = $.fn.dataTable.util.escapeRegex(
+								$(this).val()
+								);
+
+							column
+							.search( val ? '^'+val+'$' : '', true, false )
+							.draw();
+						} );
+
+						column.data().unique().sort().each( function ( d, j ) {
+							select.append( '<option value="'+d+'">'+d+'</option>' )
+						} );
+					} );
+				}
+			});
+
+			// Add Row
+			$('#add-row').DataTable({
+				"pageLength": 5,
+			});
+
+			var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
+
+			$('#addRowButton').click(function() {
+				$('#add-row').dataTable().fnAddData([
+					$("#addName").val(),
+					$("#addPosition").val(),
+					$("#addOffice").val(),
+					action
+					]);
+				$('#addRowModal').modal('hide');
+
+			});
+		});
+	</script>
+
+<script >
+		$(document).ready(function() {
+			$('#basic-datatables-1').DataTable({
+			});
+
+			$('#multi-filter-select').DataTable( {
+				"pageLength": 5,
+				initComplete: function () {
+					this.api().columns().every( function () {
+						var column = this;
+						var select = $('<select class="form-control"><option value=""></option></select>')
+						.appendTo( $(column.footer()).empty() )
+						.on( 'change', function () {
+							var val = $.fn.dataTable.util.escapeRegex(
+								$(this).val()
+								);
+
+							column
+							.search( val ? '^'+val+'$' : '', true, false )
+							.draw();
+						} );
+
+						column.data().unique().sort().each( function ( d, j ) {
+							select.append( '<option value="'+d+'">'+d+'</option>' )
+						} );
+					} );
+				}
+			});
+
+			// Add Row
+			$('#add-row').DataTable({
+				"pageLength": 5,
+			});
+
+			var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
+
+			$('#addRowButton').click(function() {
+				$('#add-row').dataTable().fnAddData([
+					$("#addName").val(),
+					$("#addPosition").val(),
+					$("#addOffice").val(),
+					action
+					]);
+				$('#addRowModal').modal('hide');
+
+			});
+		});
+	</script>
+</body>
+</html>

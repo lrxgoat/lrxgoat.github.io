@@ -1,0 +1,3670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>DNS Strict Privacy</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="assets/img/icon.ico" type="image/x-icon"/>
+
+	<!-- Fonts and icons -->
+	<script src="assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['./assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/atlantis.min.css">
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+	<div class="wrapper sidebar_minimize">
+		<div class="main-header">
+			<!-- Logo Header -->
+			<div class="logo-header" data-background-color="blue">
+				
+<!--				<a href="index-1.html" class="logo">-->
+<!--					<img src="./assets/img/logo.svg" alt="navbar brand" class="navbar-brand">-->
+<!--				</a>-->
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<!-- End Logo Header -->
+
+			<!-- Navbar Header -->
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+
+
+			</nav>
+			<!-- End Navbar -->
+		</div>
+
+		<!-- Sidebar -->
+		<div class="sidebar sidebar-style-2">			
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+
+					<ul class="nav nav-primary">
+						<li class="nav-item active submenu">
+							<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+								<i class="fas fa-desktop"></i>
+								<p>DNS Privacy</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="dashboard">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="index.html">
+											<span class="sub-item">Adoption</span>
+										</a>
+									</li>
+									<li>
+										<a href="doth-configuration.html">
+											<span class="sub-item">Configuration</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a  href="dns-sp.html">
+								<i class="fas fa-chart-bar"></i>
+								<p>DNS Strict Privacy</p>
+
+							</a>
+
+						</li>
+
+
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#Centralization" class="collapsed" aria-expanded="false">
+								<i class="fas fa-map-marked"></i>
+								<p>Centralization</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="Centralization">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="Centralization.html">
+											<span class="sub-item">Centralization Problem</span>
+										</a>
+									</li>
+									<li>
+										<a href="World-Map.html">
+											<span class="sub-item">World Map</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="nav-item">
+							<a  href="search.html">
+								<i class="fas fa-globe-americas"></i>
+								<p>Search Engine</p>
+
+							</a>
+
+						</li>
+
+						<li class="nav-item">
+							<a  href="Paper.html">
+								<i class="fas fa-file-alt"></i>
+								<p>Paper</p>
+
+							</a>
+
+						</li>
+
+						<li class="nav-item">
+							<a  href="Team.html">
+								<i class="fas fa-users"></i>
+								<p>Team Member</p>
+
+							</a>
+
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+
+		<div class="main-panel">
+			<div class="content">
+				<div class="panel-header bg-primary-gradient">
+					<div class="page-inner py-5">
+<!--						<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">-->
+						<div align="center">
+
+							<h1 class="text-white pb-2 fw-bold">DNS Privacy Adoption</h1>
+							<h4 class="text-white op-7 mb-2">In this page, we visually show the adoption of DOT/DOH in recursive resolvers and authoritative name servers.
+							<br /><br />In addition, we enumerate the public DOT/DOH servers collected and their sources.
+							</h4>
+						</div>
+
+<!--						</div>-->
+					</div>
+				</div>
+				<div class="page-inner mt--5">
+					<div class="row row-card-no-pd mt--2">
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-round">
+								<div class="card-body ">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-chart-pie text-success"></i>
+											</div>
+										</div>
+										<div class="col-7 col-stats">
+											<div class="numbers">
+												<p class="card-category">DOT Recursive Resolver</p>
+												<h4 class="card-title">21,940</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-round">
+								<div class="card-body ">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-coins text-primary"></i>
+											</div>
+										</div>
+										<div class="col-7 col-stats">
+											<div class="numbers">
+												<p class="card-category">DOH Recursive Resolver</p>
+												<h4 class="card-title">27,378</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-round">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-layers-1 text-warning"></i>
+											</div>
+										</div>
+										<div class="col-7 col-stats">
+											<div class="numbers">
+												<p class="card-category">DOT Authoritative Name Server</p>
+												<h4 class="card-title">310</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-3">
+							<div class="card card-stats card-round">
+								<div class="card-body">
+									<div class="row">
+										<div class="col-5">
+											<div class="icon-big text-center">
+												<i class="flaticon-internet text-danger"></i>
+											</div>
+										</div>
+										<div class="col-7 col-stats">
+											<div class="numbers">
+												<p class="card-category">DOH Authoritative Name Server</p>
+												<h4 class="card-title">68</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<h2>Recursive Resolver</h2>
+								</div>
+								<div class="card-body">
+									<div class="chart-container" style="min-height: 375px">
+										<canvas id="statisticsChart"></canvas>
+									</div>
+									<div id="myChartLegend"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+
+
+
+					<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<h2>Authoritative Name Server</h2>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<div class="col-10 col-md-2">
+											<div class="nav flex-column nav-pills nav-secondary nav-pills-no-bd" id="v-pills-tab-without-border" role="tablist" aria-orientation="vertical">
+<!--										<li class="nav-item">-->
+											<a class="nav-link active" id="pills-dot-org-tab-nobd" data-toggle="pill" href="#pills-dot-org-nobd-doh" role="tab" aria-controls="pills-dot-org-nobd-doh" aria-selected="true">DOT</a>
+<!--										</li>-->
+<!--										<li class="nav-item">-->
+											<a class="nav-link" id="pills-doh-org-tab-nobd" data-toggle="pill" href="#pills-doh-org-nobd-doh" role="tab" aria-controls="pills-doh-org-nobd-doh" aria-selected="false">DOH</a>
+
+													</div>
+										</div>
+									<div class="col-2 col-md-10">
+											<div class="tab-content" id="v-pills-without-border-tabContent">
+										<div class="tab-pane fade show active" id="pills-dot-org-nobd-doh" role="tabpanel" aria-labelledby="pills-dot-org-tab-nobd-doh">
+											<div align="center"> <iframe style="border: 0;padding-left: 10%" width="100%" height="550px"  src="./maps/auth_dot_number.html"></iframe></div>
+
+										</div>
+										<div class="tab-pane fade" id="pills-doh-org-nobd-doh" role="tabpanel" aria-labelledby="pills-doh-org-tab-nobd-doh">
+											<div align="center"> <iframe style="border: 0;padding-left: 10%" width="100%" height="550px"  src="./maps/auth_doh_number.html"></iframe></div>
+
+										</div>
+
+
+
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<h2>Public DNS Privacy Server</h2>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<div class="col-10 col-md-2">
+											<div class="nav flex-column nav-pills nav-secondary nav-pills-no-bd" id="v-pills-tab-without-border" role="tablist" aria-orientation="vertical">
+<!--										<li class="nav-item">-->
+											<a class="nav-link active" id="pills-tls-tab-nobd-doh" data-toggle="pill" href="#pills-tls-nobd-doh" role="tab" aria-controls="pills-tls-nobd-doh" aria-selected="true">DOT</a>
+<!--										</li>-->
+<!--										<li class="nav-item">-->
+											<a class="nav-link" id="pills-cert-tab-nobd-doh" data-toggle="pill" href="#pills-cert-nobd-doh" role="tab" aria-controls="pills-cert-nobd-doh" aria-selected="false">DOH</a>
+<!--										</li>-->
+<!--										<li class="nav-item">-->
+											<a class="nav-link" id="pills-dane-tab-nobd-doh" data-toggle="pill" href="#pills-dane-nobd-doh" role="tab" aria-controls="pills-dane-nobd-doh" aria-selected="false">Source</a>
+
+													</div>
+										</div>
+									<div class="col-2 col-md-10">
+											<div class="tab-content" id="v-pills-without-border-tabContent">
+										<div class="tab-pane fade show active" id="pills-tls-nobd-doh" role="tabpanel" aria-labelledby="pills-tls-tab-nobd-doh">
+											<div class="card">
+
+																	<div class="card-body">
+																		<div class="table-responsive">
+																			<table id="basic-datatables" class="display table table-striped table-hover" >
+																				<thead>
+																					<tr>
+																						<th>IP</th>
+																						<th>Domain</th>
+																						<th>Organization</th>
+																						<th><span title="grading criteria please see our paper">Level</span></th>
+											<!--                                            <th>CSS grade</th>-->
+																					</tr>
+																				</thead>
+
+																				<tbody>
+																			<tr>
+																				<td>1.1.1.1</td>
+																				<td>cloudflare-dns.com</td>
+																				<td>APNIC and Cloudflare DNS Resolver project</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>1.0.0.1</td>
+																				<td>cloudflare-dns.com</td>
+																				<td>APNIC and Cloudflare DNS Resolver project</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>1.1.1.1</td>
+																				<td>one.one.one.one</td>
+																				<td>APNIC and Cloudflare DNS Resolver project</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>1.0.0.3</td>
+																				<td>family.cloudflare-dns.com</td>
+																				<td>APNIC and Cloudflare DNS Resolver project</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>1.1.1.2</td>
+																				<td>security.cloudflare-dns.com</td>
+																				<td>APNIC and Cloudflare DNS Resolver project</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>1.0.0.2</td>
+																				<td>security.cloudflare-dns.com</td>
+																				<td>APNIC and Cloudflare DNS Resolver project</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>1.1.1.1</td>
+																				<td>1dot1dot1dot1.cloudflare-dns.com</td>
+																				<td>APNIC and Cloudflare DNS Resolver project</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>1.1.1.3</td>
+																				<td>family.cloudflare-dns.com</td>
+																				<td>APNIC and Cloudflare DNS Resolver project</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>1.0.0.1</td>
+																				<td>1dot1dot1dot1.cloudflare-dns.com</td>
+																				<td>APNIC and Cloudflare DNS Resolver project</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>101.198.192.33</td>
+																				<td>dot.360.cn</td>
+																				<td>Beijing Qihu Technology Company Limited</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>139.162.112.47</td>
+																				<td>dot-jp.blahdns.com</td>
+																				<td>none</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>103.2.57.6</td>
+																				<td>public.dns.iij.jp</td>
+																				<td>Internet Initiative Japan Inc.</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>103.2.57.5</td>
+																				<td>public.dns.iij.jp</td>
+																				<td>Internet Initiative Japan Inc.</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>139.99.222.72</td>
+																				<td>dot.seby.io</td>
+																				<td>OVH Australia PTY LTD</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>130.59.31.251</td>
+																				<td>dns.switch.ch</td>
+																				<td>SWITCH</td>
+																				<td>S</td>
+																			  </tr>
+																			  <tr>
+																				<td>130.59.31.248</td>
+																				<td>dns.switch.ch</td>
+																				<td>SWITCH</td>
+																				<td>S</td>
+																			  </tr>
+																			  <tr>
+																				<td>140.238.215.192</td>
+																				<td>dot.post-factum.tk</td>
+																				<td>Oracle Cloud Infrastructure (eu-zurich-1)</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>145.100.185.15</td>
+																				<td>dnsovertls.sinodun.com</td>
+																				<td></td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>145.100.185.16</td>
+																				<td>dnsovertls1.sinodun.com</td>
+																				<td></td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>149.112.112.112</td>
+																				<td>dns.quad9.net</td>
+																				<td>Packet Clearing House</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>145.100.185.17</td>
+																				<td>dnsovertls2.sinodun.com</td>
+																				<td></td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>149.112.112.10</td>
+																				<td>dns10.quad9.net</td>
+																				<td>Packet Clearing House</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>149.112.112.11</td>
+																				<td>dns11.quad9.net</td>
+																				<td>Packet Clearing House</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>145.100.185.18</td>
+																				<td>dnsovertls3.sinodun.com</td>
+																				<td></td>
+																				<td>S</td>
+																			  </tr>
+																			  <tr>
+																				<td>162.14.21.178</td>
+																				<td>dot.pub</td>
+																				<td>Tencent Cloud Computing (Beijing) Co., Ltd</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>162.14.21.56</td>
+																				<td>dot.pub</td>
+																				<td>Tencent Cloud Computing (Beijing) Co., Ltd</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>146.255.56.98</td>
+																				<td>dot1.applied-privacy.net</td>
+																				<td>Applied Privacy</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>149.112.121.10</td>
+																				<td>private.canadianshield.cira.ca</td>
+																				<td>CIRA Canadian Internet Registration Authority Autorit Canadienne pour les enregistrements Internet</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>149.112.121.20</td>
+																				<td>protected.canadianshield.cira.ca</td>
+																				<td>CIRA Canadian Internet Registration Authority Autorit Canadienne pour les enregistrements Internet</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>149.112.122.10</td>
+																				<td>private.canadianshield.cira.ca</td>
+																				<td>CIRA Canadian Internet Registration Authority Autorit Canadienne pour les enregistrements Internet</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>149.112.122.20</td>
+																				<td>protected.canadianshield.cira.ca</td>
+																				<td>CIRA Canadian Internet Registration Authority Autorit Canadienne pour les enregistrements Internet</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>158.64.1.29</td>
+																				<td>kaitain.restena.lu</td>
+																				<td>Fondation RESTENA</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>176.9.1.117</td>
+																				<td>dnsforge.de</td>
+																				<td>Hetzner</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>176.9.199.158</td>
+																				<td>dns.decloudus.com</td>
+																				<td></td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>176.9.93.198</td>
+																				<td>dnsforge.de</td>
+																				<td>Hetzner</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>184.105.193.78</td>
+																				<td>tls-dns-u.odvr.dns-oarc.net</td>
+																				<td>none</td>
+																				<td>C</td>
+																			  </tr>
+																			  <tr>
+																				<td>185.222.222.222</td>
+																				<td>dns.sb</td>
+																				<td>DNS SB</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>185.150.99.255</td>
+																				<td>dot.ffmuc.net</td>
+																				<td>Freie Netze Muenchen e.V</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>185.228.168.10</td>
+																				<td>adult-filter-dns.cleanbrowsing.org</td>
+																				<td>DNS Anycast Cleanbrowsing</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>185.228.168.168</td>
+																				<td>family-filter-dns.cleanbrowsing.org</td>
+																				<td>DNS Anycast Cleanbrowsing</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>185.228.168.9</td>
+																				<td>security-filter-dns.cleanbrowsing.org</td>
+																				<td>DNS Anycast Cleanbrowsing</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>185.235.81.1</td>
+																				<td>doh.dnslify.com</td>
+																				<td>Peerix LTD</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>193.19.108.2</td>
+																				<td>doh.mullvad.net</td>
+																				<td>none</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>193.19.108.3</td>
+																				<td>adblock.doh.mullvad.net</td>
+																				<td>none</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>185.49.141.37</td>
+																				<td>getdnsapi.net</td>
+																				<td>Stichting NLnet Labs</td>
+																				<td>S</td>
+																			  </tr>
+																			  <tr>
+																				<td>193.17.47.1</td>
+																				<td>odvr.nic.cz</td>
+																				<td>odvr</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>185.43.135.1</td>
+																				<td>odvr.nic.cz</td>
+																				<td>none</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>194.182.182.199</td>
+																				<td>dns.nextdns.io</td>
+																				<td>Akenes SA</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>199.58.81.218</td>
+																				<td>dns.cmrg.net</td>
+																				<td>Koumbit</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>223.5.5.5</td>
+																				<td>dns.alidns.com</td>
+																				<td>Aliyun Computing Co., LTD</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>223.6.6.6</td>
+																				<td>dns.alidns.com</td>
+																				<td>Aliyun Computing Co., LTD</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>217.146.30.7</td>
+																				<td>dns.nextdns.io</td>
+																				<td>ANX</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>185.213.26.187</td>
+																				<td>dot.eastus.pi-dns.com</td>
+																				<td>HostHatch LLC</td>
+																				<td>C</td>
+																			  </tr>
+																			  <tr>
+																				<td>213.196.191.96</td>
+																				<td>ibksturm.synology.me</td>
+																				<td></td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>45.76.113.31</td>
+																				<td>dot.seby.io</td>
+																				<td>Vultr Holdings, LLC</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>45.67.219.208</td>
+																				<td>dot.westus.pi-dns.com</td>
+																				<td>HostHatch LLC</td>
+																				<td>C</td>
+																			  </tr>
+																			  <tr>
+																				<td>46.9.220.245</td>
+																				<td>dandelionsprout.asuscomm.com</td>
+																				<td>Trondheim Huseby, Norway</td>
+																				<td>C</td>
+																			  </tr>
+																			  <tr>
+																				<td>51.158.147.50</td>
+																				<td>resolver-eu.lelux.fi</td>
+																				<td>ONLINE</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>51.38.83.141</td>
+																				<td>dns.oszx.co</td>
+																				<td>OVH</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>5.1.66.255</td>
+																				<td>anycast01.ffmuc.net</td>
+																				<td>Freie Netze Muenchen e.V</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>5.1.66.255</td>
+																				<td>dot.ffmuc.net</td>
+																				<td>Freie Netze Muenchen e.V</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>76.76.2.11</td>
+																				<td>p0.freedns.controld.com</td>
+																				<td>Controld Inc</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>76.76.2.11</td>
+																				<td>p1.freedns.controld.com</td>
+																				<td>Controld Inc</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>5.9.164.112</td>
+																				<td>dns3.digitalcourage.de</td>
+																				<td></td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>76.76.2.11</td>
+																				<td>p2.freedns.controld.com</td>
+																				<td>Controld Inc</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>76.76.2.11</td>
+																				<td>p3.freedns.controld.com</td>
+																				<td>Controld Inc</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>78.46.244.143</td>
+																				<td>dot-de.blahdns.com</td>
+																				<td>none</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>81.3.27.54</td>
+																				<td>recursor01.dns.lightningwirelabs.com</td>
+																				<td></td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>8.8.4.4</td>
+																				<td>dns.google</td>
+																				<td>Google Public DNS</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>81.3.27.54</td>
+																				<td>recursor01.dns.ipfire.org</td>
+																				<td></td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>8.8.8.8</td>
+																				<td>dns.google</td>
+																				<td>Google Public DNS</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>81.90.180.173</td>
+																				<td>dns.comss.one</td>
+																				<td>HostiMan.ru</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>89.234.186.112</td>
+																				<td>dns.neutopia.org</td>
+																				<td>Association GRIFON</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>89.233.43.71</td>
+																				<td>unicast.uncensoreddns.org</td>
+																				<td>WEBPARTNER</td>
+																				<td>S</td>
+																			  </tr>
+																			  <tr>
+																				<td>89.233.43.71</td>
+																				<td>unicast.censurfridns.dk</td>
+																				<td>WEBPARTNER</td>
+																				<td>S</td>
+																			  </tr>
+																			  <tr>
+																				<td>91.230.211.67</td>
+																				<td>dns.east.comss.one</td>
+																				<td>Optibit LLC</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>91.239.100.100</td>
+																				<td>anycast.censurfridns.dk</td>
+																				<td>Thomas Steen Rasmussen</td>
+																				<td>S</td>
+																			  </tr>
+																			  <tr>
+																				<td>91.239.100.100</td>
+																				<td>anycast.uncensoreddns.org</td>
+																				<td>Thomas Steen Rasmussen</td>
+																				<td>S</td>
+																			  </tr>
+																			  <tr>
+																				<td>92.223.109.31</td>
+																				<td>dns.east.comss.one</td>
+																				<td>G-Core Labs S.A</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>94.140.14.140</td>
+																				<td>dns-unfiltered.adguard.com</td>
+																				<td>AdGuard Software Limited</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>92.223.65.71</td>
+																				<td>dns.comss.one</td>
+																				<td>none</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>94.140.14.141</td>
+																				<td>dns-unfiltered.adguard.com</td>
+																				<td>AdGuard Software Limited</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>94.140.14.14</td>
+																				<td>dns.adguard.com</td>
+																				<td>AdGuard Software Limited</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>94.140.14.15</td>
+																				<td>dns-family.adguard.com</td>
+																				<td>AdGuard Software Limited</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>94.140.15.15</td>
+																				<td>dns.adguard.com</td>
+																				<td>AdGuard Software Limited</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>94.140.15.16</td>
+																				<td>dns-family.adguard.com</td>
+																				<td>AdGuard Software Limited</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>95.216.212.177</td>
+																				<td>dot-fi.blahdns.com</td>
+																				<td>none</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>95.216.24.230</td>
+																				<td>fi.dot.dns.snopyta.org</td>
+																				<td>Hetzner Online GmbH</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>9.9.9.10</td>
+																				<td>dns10.quad9.net</td>
+																				<td>Quad9</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>95.217.213.94</td>
+																				<td>dns-dot.dnsforfamily.com</td>
+																				<td>HETZNER-DC</td>
+																				<td>B</td>
+																			  </tr>
+																			  <tr>
+																				<td>9.9.9.11</td>
+																				<td>dns11.quad9.net</td>
+																				<td>Quad9</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>9.9.9.9</td>
+																				<td>dns.quad9.net</td>
+																				<td>Quad9</td>
+																				<td>A</td>
+																			  </tr>
+																			  <tr>
+																				<td>116.202.176.26</td>
+																				<td>dot.libredns.gr</td>
+																				<td>Hetzner</td>
+																				<td>A</td>
+																			  </tr>
+																		</tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+
+										</div>
+										<div class="tab-pane fade" id="pills-cert-nobd-doh" role="tabpanel" aria-labelledby="pills-cert-tab-nobd-doh">
+											<div class="card">
+
+																	<div class="card-body">
+																		<div class="table-responsive">
+																			<table id="basic-datatables-1" class="display table table-striped table-hover" >
+																				<thead>
+																					<tr>
+																						<th>IP</th>
+																						<th>Domain</th>
+																						<th>Path</th>
+																						<th>Organization</th>
+																						<th><span title="grading criteria please see our paper">Level</span></th>
+											<!--                                            <th>CSS grade</th>-->
+																					</tr>
+																				</thead>
+
+																				<tbody>
+                                              <tr>
+    <td>1.0.0.1</td>
+    <td>1dot1dot1dot1.cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>APNIC and Cloudflare DNS Resolver project</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>1.0.0.1</td>
+    <td>one.one.one.one</td>
+    <td>/dns-query</td>
+    <td>APNIC and Cloudflare DNS Resolver project</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>1.0.0.2</td>
+    <td>security.cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>APNIC and Cloudflare DNS Resolver project</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>1.0.0.3</td>
+    <td>family.cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>APNIC and Cloudflare DNS Resolver project</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>101.101.101.101</td>
+    <td>dns.twnic.tw</td>
+    <td>/</td>
+    <td>Twnic Experimental</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>101.101.101.101</td>
+    <td>dns.twnic.tw</td>
+    <td>/dns-query</td>
+    <td>Twnic Experimental</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>101.101.101.101</td>
+    <td>dns.twnic.tw</td>
+    <td>/query</td>
+    <td>Twnic Experimental</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>101.101.101.101</td>
+    <td>dns.twnic.tw</td>
+    <td>/resolve</td>
+    <td>Twnic Experimental</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>101.102.103.104</td>
+    <td>dns.twnic.tw</td>
+    <td>/</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>101.102.103.104</td>
+    <td>dns.twnic.tw</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>101.102.103.104</td>
+    <td>dns.twnic.tw</td>
+    <td>/query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>101.102.103.104</td>
+    <td>dns.twnic.tw</td>
+    <td>/resolve</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>101.198.192.33</td>
+    <td>doh.360.cn</td>
+    <td>/</td>
+    <td>Beijing Qihu Technology Company Limited</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>101.198.192.33</td>
+    <td>doh.360.cn</td>
+    <td>/dns-query</td>
+    <td>Beijing Qihu Technology Company Limited</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>101.33.125.235</td>
+    <td>i.passcloud.xyz</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>101.34.204.157</td>
+    <td>i.233py.com</td>
+    <td>/dns-query</td>
+    <td>Tencent Cloud Computing (Beijing) Co., Ltd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>101.35.161.25</td>
+    <td>i.233py.com</td>
+    <td>/dns-query</td>
+    <td>Tencent Cloud Computing (Beijing) Co., Ltd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>103.121.210.210</td>
+    <td>jp-nrt.doh.sb</td>
+    <td>/dns-query</td>
+    <td>Xtom Nippon</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>103.196.38.200</td>
+    <td>query.hdns.io</td>
+    <td>/dns-query</td>
+    <td>Mach Dilemma, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>103.254.108.74</td>
+    <td>a.passcloud.xyz</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>103.254.108.74</td>
+    <td>a.passcloud.xyz</td>
+    <td>/resolve</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>103.2.57.5</td>
+    <td>public.dns.iij.jp</td>
+    <td>/dns-query</td>
+    <td>Internet Initiative Japan Inc.</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>103.2.57.6</td>
+    <td>public.dns.iij.jp</td>
+    <td>/dns-query</td>
+    <td>Internet Initiative Japan Inc.</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>103.73.64.132</td>
+    <td>doh.au.ahadns.net</td>
+    <td>/dns-query</td>
+    <td>HostHatch, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>104.16.132.229</td>
+    <td>dns.cloudflare.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>104.16.133.229</td>
+    <td>dns.cloudflare.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>104.16.248.249</td>
+    <td>cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>104.16.248.249</td>
+    <td>mozilla.cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>104.16.249.249</td>
+    <td>cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>104.16.249.249</td>
+    <td>mozilla.cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>104.18.26.211</td>
+    <td>chrome.cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.18.27.211</td>
+    <td>chrome.cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.13.53</td>
+    <td>basic.rethinkdns.com</td>
+    <td>/</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.13.53</td>
+    <td>basic.rethinkdns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.13.53</td>
+    <td>basic.rethinkdns.com</td>
+    <td>/query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.13.53</td>
+    <td>basic.rethinkdns.com</td>
+    <td>/resolve</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.22.243</td>
+    <td>adblock.mydns.network</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.22.243</td>
+    <td>freedom.mydns.network</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.30.162</td>
+    <td>jp.tiarap.org</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.49.234</td>
+    <td>basic.bravedns.com</td>
+    <td>/</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.49.234</td>
+    <td>basic.bravedns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.49.234</td>
+    <td>basic.bravedns.com</td>
+    <td>/query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.49.234</td>
+    <td>basic.bravedns.com</td>
+    <td>/resolve</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.49.234</td>
+    <td>free.bravedns.com</td>
+    <td>/</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.49.234</td>
+    <td>free.bravedns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.49.234</td>
+    <td>free.bravedns.com</td>
+    <td>/query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.49.234</td>
+    <td>free.bravedns.com</td>
+    <td>/resolve</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.51.90</td>
+    <td>doh.post-factum.tk</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>104.21.6.78</td>
+    <td>doh.crypto.sx</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>1.1.1.1</td>
+    <td>1dot1dot1dot1.cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>APNIC and Cloudflare DNS Resolver project</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>1.1.1.1</td>
+    <td>one.one.one.one</td>
+    <td>/dns-query</td>
+    <td>APNIC and Cloudflare DNS Resolver project</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>111.229.68.53</td>
+    <td>i.233py.com</td>
+    <td>/dns-query</td>
+    <td>Tencent cloud computing (Beijing) Co., Ltd.</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>1.1.1.2</td>
+    <td>security.cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>APNIC and Cloudflare DNS Resolver project</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>1.1.1.3</td>
+    <td>family.cloudflare-dns.com</td>
+    <td>/dns-query</td>
+    <td>APNIC and Cloudflare DNS Resolver project</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>116.202.176.26</td>
+    <td>doh.libredns.gr</td>
+    <td>/ads</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>116.202.176.26</td>
+    <td>doh.libredns.gr</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>130.225.244.166</td>
+    <td>deic-lgb.anycast.censurfridns.dk</td>
+    <td>/</td>
+    <td>Danmarks Tekniske Universitet</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td>130.225.244.166</td>
+    <td>deic-lgb.anycast.censurfridns.dk</td>
+    <td>/dns-query</td>
+    <td>Danmarks Tekniske Universitet</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td>130.225.244.166</td>
+    <td>deic-lgb.anycast.uncensoreddns.org</td>
+    <td>/</td>
+    <td>Danmarks Tekniske Universitet</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td>130.225.244.166</td>
+    <td>deic-lgb.anycast.uncensoreddns.org</td>
+    <td>/dns-query</td>
+    <td>Danmarks Tekniske Universitet</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td>130.226.161.34</td>
+    <td>deic-ore.anycast.censurfridns.dk</td>
+    <td>/</td>
+    <td>Danmarks Tekniske Universitet</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>130.226.161.34</td>
+    <td>deic-ore.anycast.censurfridns.dk</td>
+    <td>/dns-query</td>
+    <td>Danmarks Tekniske Universitet</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>130.226.161.34</td>
+    <td>deic-ore.anycast.uncensoreddns.org</td>
+    <td>/</td>
+    <td>Danmarks Tekniske Universitet</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>130.226.161.34</td>
+    <td>deic-ore.anycast.uncensoreddns.org</td>
+    <td>/dns-query</td>
+    <td>Danmarks Tekniske Universitet</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>130.59.31.248</td>
+    <td>dns.switch.ch</td>
+    <td>/</td>
+    <td>SWITCH</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>130.59.31.248</td>
+    <td>dns.switch.ch</td>
+    <td>/dns-query</td>
+    <td>SWITCH</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>130.59.31.251</td>
+    <td>dns.switch.ch</td>
+    <td>/</td>
+    <td>SWITCH</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>130.59.31.251</td>
+    <td>dns.switch.ch</td>
+    <td>/dns-query</td>
+    <td>SWITCH</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>13.53.186.52</td>
+    <td>dns.brahma.world</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>137.117.187.53</td>
+    <td>dns.comss.one</td>
+    <td>/dns-query</td>
+    <td>Microsoft Azure Cloud (westeurope)</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td>138.199.24.210</td>
+    <td>doh1.b-cdn.net</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>138.199.24.210</td>
+    <td>doh1.blahdns.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>13.89.120.251</td>
+    <td>dohtrial.att.net</td>
+    <td>/</td>
+    <td>Microsoft Azure Cloud (centralus)</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>13.89.120.251</td>
+    <td>dohtrial.att.net</td>
+    <td>/dns-query</td>
+    <td>Microsoft Azure Cloud (centralus)</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>13.89.120.251</td>
+    <td>dohtrial.att.net</td>
+    <td>/query</td>
+    <td>Microsoft Azure Cloud (centralus)</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>13.89.120.251</td>
+    <td>dohtrial.att.net</td>
+    <td>/resolve</td>
+    <td>Microsoft Azure Cloud (centralus)</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>139.162.86.249</td>
+    <td>berd.moe</td>
+    <td>/dns</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>139.99.222.72</td>
+    <td>doh-2.seby.io</td>
+    <td>/dns-query</td>
+    <td>OVH Australia PTY LTD</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>139.99.222.72</td>
+    <td>dot.seby.io</td>
+    <td>/dns-query</td>
+    <td>OVH Australia PTY LTD</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>144.202.69.149</td>
+    <td>doh.us.dnswarden.com</td>
+    <td>/adblock</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>144.202.69.149</td>
+    <td>doh.us.dnswarden.com</td>
+    <td>/adultfilter</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>144.202.69.149</td>
+    <td>doh.us.dnswarden.com</td>
+    <td>/uncensored</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>146.112.41.2</td>
+    <td>doh.opendns.com</td>
+    <td>/dns-query</td>
+    <td>Cisco OpenDNS LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>146.112.41.3</td>
+    <td>doh.familyshield.opendns.com</td>
+    <td>/dns-query</td>
+    <td>Cisco OpenDNS LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>146.112.41.4</td>
+    <td>doh.sandbox.opendns.com</td>
+    <td>/dns-query</td>
+    <td>Cisco OpenDNS LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>146.255.56.98</td>
+    <td>doh.applied-privacy.net</td>
+    <td>/query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>146.255.56.98</td>
+    <td>doh.appliedprivacy.net</td>
+    <td>/query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>149.112.112.10</td>
+    <td>dns10.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Packet Clearing House</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>149.112.112.112</td>
+    <td>dns.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Packet Clearing House</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>149.112.112.11</td>
+    <td>dns11.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Packet Clearing House</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>149.112.112.12</td>
+    <td>dns12.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Packet Clearing House</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>149.112.112.13</td>
+    <td>dns13.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Packet Clearing House</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>149.112.112.9</td>
+    <td>dns9.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Packet Clearing House</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>149.112.121.10</td>
+    <td>private.canadianshield.cira.ca</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>149.112.121.20</td>
+    <td>protected.canadianshield.cira.ca</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>149.112.121.30</td>
+    <td>family.canadianshield.cira.ca</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>149.112.122.10</td>
+    <td>private.canadianshield.cira.ca</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>149.112.122.20</td>
+    <td>protected.canadianshield.cira.ca</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>149.112.122.30</td>
+    <td>family.canadianshield.cira.ca</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>149.154.153.153</td>
+    <td>adfree.usableprivacy.net</td>
+    <td>/</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>149.154.153.153</td>
+    <td>adfree.usableprivacy.net</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>149.154.153.153</td>
+    <td>adfree.usableprivacy.net</td>
+    <td>/query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>151.80.222.79</td>
+    <td>opennic.i2pd.xyz</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>152.67.165.26</td>
+    <td>jit.ddns.net</td>
+    <td>/</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>152.67.165.26</td>
+    <td>jit.ddns.net</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>152.67.165.26</td>
+    <td>jit.ddns.net</td>
+    <td>/query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>152.67.165.26</td>
+    <td>jit.ddns.net</td>
+    <td>/resolve</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>156.154.175.230</td>
+    <td>doh.eastus.pi-dns.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>156.154.176.230</td>
+    <td>doh.eastus.pi-dns.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>162.14.21.178</td>
+    <td>dns.pub</td>
+    <td>/dns-query</td>
+    <td>Tencent Cloud Computing (Beijing) Co., Ltd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>162.14.21.178</td>
+    <td>doh.pub</td>
+    <td>/dns-query</td>
+    <td>Tencent Cloud Computing (Beijing) Co., Ltd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>162.14.21.178</td>
+    <td>dot.pub</td>
+    <td>/dns-query</td>
+    <td>Tencent Cloud Computing (Beijing) Co., Ltd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>162.14.21.56</td>
+    <td>dns.pub</td>
+    <td>/dns-query</td>
+    <td>Tencent Cloud Computing (Beijing) Co., Ltd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>162.14.21.56</td>
+    <td>doh.pub</td>
+    <td>/dns-query</td>
+    <td>Tencent Cloud Computing (Beijing) Co., Ltd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>162.14.21.56</td>
+    <td>dot.pub</td>
+    <td>/dns-query</td>
+    <td>Tencent Cloud Computing (Beijing) Co., Ltd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>168.138.243.216</td>
+    <td>ibuki.cgnat.net</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>168.235.81.167</td>
+    <td>dns-gcp.aaflalo.me</td>
+    <td>/dns-query</td>
+    <td>RamNode LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>168.235.81.167</td>
+    <td>dns-nyc.aaflalo.me</td>
+    <td>/dns-query</td>
+    <td>RamNode LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>172.104.206.174</td>
+    <td>dns.therifleman.name</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>172.64.80.1</td>
+    <td>doh.tiarap.org</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.134.157</td>
+    <td>doh.crypto.sx</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.154.200</td>
+    <td>basic.rethinkdns.com</td>
+    <td>/</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.154.200</td>
+    <td>basic.rethinkdns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.154.200</td>
+    <td>basic.rethinkdns.com</td>
+    <td>/query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.154.200</td>
+    <td>basic.rethinkdns.com</td>
+    <td>/resolve</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.173.59</td>
+    <td>jp.tiarap.org</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.177.252</td>
+    <td>doh.post-factum.tk</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.195.148</td>
+    <td>basic.bravedns.com</td>
+    <td>/</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.195.148</td>
+    <td>basic.bravedns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.195.148</td>
+    <td>basic.bravedns.com</td>
+    <td>/query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.195.148</td>
+    <td>basic.bravedns.com</td>
+    <td>/resolve</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.195.148</td>
+    <td>free.bravedns.com</td>
+    <td>/</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.195.148</td>
+    <td>free.bravedns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.195.148</td>
+    <td>free.bravedns.com</td>
+    <td>/query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.195.148</td>
+    <td>free.bravedns.com</td>
+    <td>/resolve</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.207.222</td>
+    <td>adblock.mydns.network</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>172.67.207.222</td>
+    <td>freedom.mydns.network</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>173.199.126.35</td>
+    <td>hydra.plan9-ns1.com</td>
+    <td>/dns-query</td>
+    <td>Vultr Holdings, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>174.138.29.175</td>
+    <td>doh.tiar.app</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>174.138.29.175</td>
+    <td>dot.tiar.app</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>176.9.1.117</td>
+    <td>dnsforge.de</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>176.9.199.158</td>
+    <td>dns.decloudus.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>176.9.93.198</td>
+    <td>dnsforge.de</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>185.134.196.54</td>
+    <td>rdns.faelix.net</td>
+    <td>/</td>
+    <td>Faelix (TE )</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td>185.134.196.55</td>
+    <td>rdns.faelix.net</td>
+    <td>/</td>
+    <td>Faelix (TE )</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td>185.150.99.255</td>
+    <td>doh.ffmuc.net</td>
+    <td>/</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>185.150.99.255</td>
+    <td>doh.ffmuc.net</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>185.150.99.255</td>
+    <td>doh.ffmuc.net</td>
+    <td>/query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>185.150.99.255</td>
+    <td>doh.ffmuc.net</td>
+    <td>/resolve</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>185.175.56.133</td>
+    <td>doh.no.ahadns.net</td>
+    <td>/dns-query</td>
+    <td>HostHatch LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.194.94.71</td>
+    <td>dns.circl.lu</td>
+    <td>/dns-query</td>
+    <td>Circl RE</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.194.94.71</td>
+    <td>dns.circl.lu</td>
+    <td>/resolve</td>
+    <td>Circl RE</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.213.26.187</td>
+    <td>doh.ny.ahadns.net</td>
+    <td>/dns-query</td>
+    <td>HostHatch LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.216.27.142</td>
+    <td>doh.42l.fr</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>185.222.222.222</td>
+    <td>doh.sb</td>
+    <td>/dns-query</td>
+    <td>DNS SB</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.222.222.222</td>
+    <td>public-dns-a.dns.sb</td>
+    <td>/dns-query</td>
+    <td>DNS SB</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.228.168.10</td>
+    <td>doh.cleanbrowsing.org</td>
+    <td>/doh/family-filter/</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>185.228.168.168</td>
+    <td>doh.cleanbrowsing.org</td>
+    <td>/doh/family-filter/</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>185.233.106.232</td>
+    <td>dns.dnshome.de</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>185.233.107.4</td>
+    <td>dns.dnshome.de</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>185.235.81.1</td>
+    <td>doh.dnslify.com</td>
+    <td>/dns-query</td>
+    <td>Peerix LTD</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.253.154.66</td>
+    <td>dnses.alekberg.net</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>185.38.27.139</td>
+    <td>kracon.anycast.censurfridns.dk</td>
+    <td>/</td>
+    <td>Kracon ApS</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>185.38.27.139</td>
+    <td>kracon.anycast.censurfridns.dk</td>
+    <td>/dns-query</td>
+    <td>Kracon ApS</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>185.38.27.139</td>
+    <td>kracon.anycast.uncensoreddns.org</td>
+    <td>/</td>
+    <td>Kracon ApS</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>185.38.27.139</td>
+    <td>kracon.anycast.uncensoreddns.org</td>
+    <td>/dns-query</td>
+    <td>Kracon ApS</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>185.64.79.5</td>
+    <td>doh.dns.sb</td>
+    <td>/dns-query</td>
+    <td>xTom GmbH</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.93.1.242</td>
+    <td>doh2.b-cdn.net</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.93.1.242</td>
+    <td>doh2.blahdns.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>185.95.218.42</td>
+    <td>dns1.digitale-gesellschaft.ch</td>
+    <td>/dns-query</td>
+    <td>Patrick Velder</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.95.218.42</td>
+    <td>dns.digitale-gesellschaft.ch</td>
+    <td>/dns-query</td>
+    <td>Patrick Velder</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.95.218.43</td>
+    <td>dns2.digitale-gesellschaft.ch</td>
+    <td>/dns-query</td>
+    <td>Patrick Velder</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>185.95.218.43</td>
+    <td>dns.digitale-gesellschaft.ch</td>
+    <td>/dns-query</td>
+    <td>Patrick Velder</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>192.53.175.149</td>
+    <td>doh-sg.blahdns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>193.29.62.196</td>
+    <td>doh.chi.ahadns.net</td>
+    <td>/dns-query</td>
+    <td>HostHatch LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>193.70.85.11</td>
+    <td>doh.bortzmeyer.fr</td>
+    <td>/</td>
+    <td>OVH</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>194.124.76.14</td>
+    <td>us-east.adhole.org</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>198.180.150.12</td>
+    <td>rgnet-iad.anycast.censurfridns.dk</td>
+    <td>/</td>
+    <td>RGnet OU</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>198.180.150.12</td>
+    <td>rgnet-iad.anycast.censurfridns.dk</td>
+    <td>/dns-query</td>
+    <td>RGnet OU</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>198.180.150.12</td>
+    <td>rgnet-iad.anycast.uncensoreddns.org</td>
+    <td>/</td>
+    <td>RGnet OU</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>198.180.150.12</td>
+    <td>rgnet-iad.anycast.uncensoreddns.org</td>
+    <td>/dns-query</td>
+    <td>RGnet OU</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>202.5.221.130</td>
+    <td>jp-kix.doh.sb</td>
+    <td>/dns-query</td>
+    <td>Virtual Hosting, Inc.</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>202.5.221.131</td>
+    <td>jp-kix.doh.sb</td>
+    <td>/dns-query</td>
+    <td>Virtual Hosting, Inc.</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>202.5.221.132</td>
+    <td>jp-kix.doh.sb</td>
+    <td>/dns-query</td>
+    <td>Virtual Hosting, Inc.</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>202.5.221.133</td>
+    <td>jp-kix.doh.sb</td>
+    <td>/dns-query</td>
+    <td>Virtual Hosting, Inc.</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>202.5.221.134</td>
+    <td>jp-kix.doh.sb</td>
+    <td>/dns-query</td>
+    <td>Virtual Hosting, Inc.</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>207.148.120.244</td>
+    <td>doh.asia.dnswarden.com</td>
+    <td>/adblock</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>207.148.120.244</td>
+    <td>doh.asia.dnswarden.com</td>
+    <td>/adultfilter</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>207.148.120.244</td>
+    <td>doh.asia.dnswarden.com</td>
+    <td>/uncensored</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>208.67.220.123</td>
+    <td>familyshield.opendns.com</td>
+    <td>/dns-query</td>
+    <td>Cisco OpenDNS, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>208.67.220.220</td>
+    <td>dns.opendns.com</td>
+    <td>/dns-query</td>
+    <td>Cisco OpenDNS, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>208.67.220.2</td>
+    <td>sandbox.opendns.com</td>
+    <td>/dns-query</td>
+    <td>Cisco OpenDNS, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>208.67.222.123</td>
+    <td>familyshield.opendns.com</td>
+    <td>/dns-query</td>
+    <td>Cisco OpenDNS, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>208.67.222.222</td>
+    <td>dns.opendns.com</td>
+    <td>/dns-query</td>
+    <td>Cisco OpenDNS, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>208.67.222.2</td>
+    <td>sandbox.opendns.com</td>
+    <td>/dns-query</td>
+    <td>Cisco OpenDNS, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>209.250.226.191</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/</td>
+    <td>Vultr Holdings LLC London</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>209.250.226.191</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/dns-query</td>
+    <td>Vultr Holdings LLC London</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>209.250.226.191</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/query</td>
+    <td>Vultr Holdings LLC London</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>209.250.226.191</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/resolve</td>
+    <td>Vultr Holdings LLC London</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>209.250.226.191</td>
+    <td>dns.nextdns.io</td>
+    <td>/</td>
+    <td>Vultr Holdings LLC London</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>209.250.226.191</td>
+    <td>dns.nextdns.io</td>
+    <td>/dns-query</td>
+    <td>Vultr Holdings LLC London</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>209.250.226.191</td>
+    <td>dns.nextdns.io</td>
+    <td>/query</td>
+    <td>Vultr Holdings LLC London</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>209.250.226.191</td>
+    <td>dns.nextdns.io</td>
+    <td>/resolve</td>
+    <td>Vultr Holdings LLC London</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>210.16.120.48</td>
+    <td>sg.adhole.org</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>213.196.191.96</td>
+    <td>ibksturm.synology.me</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>217.169.20.22</td>
+    <td>dns.aa.net.uk</td>
+    <td>/</td>
+    <td>Andrews and Arnold LTD</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>217.169.20.22</td>
+    <td>dns.aa.net.uk</td>
+    <td>/dns-query</td>
+    <td>Andrews and Arnold LTD</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>217.169.20.23</td>
+    <td>dns.aa.net.uk</td>
+    <td>/</td>
+    <td>Andrews and Arnold LTD</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>217.169.20.23</td>
+    <td>dns.aa.net.uk</td>
+    <td>/dns-query</td>
+    <td>Andrews and Arnold LTD</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>221.228.217.28</td>
+    <td>dns.ipv6dns.com</td>
+    <td>/dns-query</td>
+    <td>Chinanet JS</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>223.5.5.5</td>
+    <td>dns.alidns.com</td>
+    <td>/dns-query</td>
+    <td>Aliyun Computing Co., LTD</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>223.6.6.6</td>
+    <td>dns.alidns.com</td>
+    <td>/dns-query</td>
+    <td>Aliyun Computing Co., LTD</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>23.226.134.242</td>
+    <td>dns.wevpn.com</td>
+    <td>/dns-query</td>
+    <td>QuadraNet Inc</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>23.226.134.243</td>
+    <td>dns-weblock.wevpn.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>24.240.146.7</td>
+    <td>doh-01.spectrum.com</td>
+    <td>/dns-query</td>
+    <td>Spectrum</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>24.240.146.8</td>
+    <td>doh-02.spectrum.com</td>
+    <td>/dns-query</td>
+    <td>Spectrum</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.230.153</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.230.153</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/dns-query</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.230.153</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/query</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.230.153</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/resolve</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.230.153</td>
+    <td>dns.nextdns.io</td>
+    <td>/</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.230.153</td>
+    <td>dns.nextdns.io</td>
+    <td>/dns-query</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.230.153</td>
+    <td>dns.nextdns.io</td>
+    <td>/query</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.230.153</td>
+    <td>dns.nextdns.io</td>
+    <td>/resolve</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/dns-query</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/query</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/resolve</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>dns1.nextdns.io</td>
+    <td>/</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>dns1.nextdns.io</td>
+    <td>/dns-query</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>dns1.nextdns.io</td>
+    <td>/query</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>dns1.nextdns.io</td>
+    <td>/resolve</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>dns.nextdns.io</td>
+    <td>/</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>dns.nextdns.io</td>
+    <td>/dns-query</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>dns.nextdns.io</td>
+    <td>/query</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>37.252.249.233</td>
+    <td>dns.nextdns.io</td>
+    <td>/resolve</td>
+    <td>ANX</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>40.114.113.18</td>
+    <td>dns.doh.my.id</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>40.76.112.230</td>
+    <td>dohtrial.att.net</td>
+    <td>/</td>
+    <td>Microsoft Azure Cloud (eastus)</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>40.76.112.230</td>
+    <td>dohtrial.att.net</td>
+    <td>/dns-query</td>
+    <td>Microsoft Azure Cloud (eastus)</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>40.76.112.230</td>
+    <td>dohtrial.att.net</td>
+    <td>/query</td>
+    <td>Microsoft Azure Cloud (eastus)</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>40.76.112.230</td>
+    <td>dohtrial.att.net</td>
+    <td>/resolve</td>
+    <td>Microsoft Azure Cloud (eastus)</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>43.129.162.220</td>
+    <td>i.passcloud.xyz</td>
+    <td>/dns-query</td>
+    <td>Tencent Cloud Computing</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.11.104.186</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/</td>
+    <td>nextdns, Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.11.104.186</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/dns-query</td>
+    <td>nextdns, Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.11.104.186</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/query</td>
+    <td>nextdns, Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.11.104.186</td>
+    <td>chromium.dns.nextdns.io</td>
+    <td>/resolve</td>
+    <td>nextdns, Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.11.104.186</td>
+    <td>dns.nextdns.io</td>
+    <td>/</td>
+    <td>nextdns, Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.11.104.186</td>
+    <td>dns.nextdns.io</td>
+    <td>/dns-query</td>
+    <td>nextdns, Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.11.104.186</td>
+    <td>dns.nextdns.io</td>
+    <td>/query</td>
+    <td>nextdns, Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.11.104.186</td>
+    <td>dns.nextdns.io</td>
+    <td>/resolve</td>
+    <td>nextdns, Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.11.45.11</td>
+    <td>public-dns-b.dns.sb</td>
+    <td>/dns-query</td>
+    <td>DNS SB</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.125.0.26</td>
+    <td>hk-hkg.doh.sb</td>
+    <td>/dns-query</td>
+    <td>Xtom HKG</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.132.74.167</td>
+    <td>doh.es.ahadns.net</td>
+    <td>/dns-query</td>
+    <td>HostHatch, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.132.75.16</td>
+    <td>doh.pl.ahadns.net</td>
+    <td>/dns-query</td>
+    <td>HostHatch, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.153.187.96</td>
+    <td>dnsse.alekberg.net</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>45.67.219.208</td>
+    <td>doh.la.ahadns.net</td>
+    <td>/dns-query</td>
+    <td>HostHatch LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.67.219.208</td>
+    <td>doh.westus.pi-dns.com</td>
+    <td>/dns-query</td>
+    <td>HostHatch LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.76.113.31</td>
+    <td>dot.seby.io</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>45.76.88.20</td>
+    <td>doh.eu.dnswarden.com</td>
+    <td>/adblock</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>45.76.88.20</td>
+    <td>doh.eu.dnswarden.com</td>
+    <td>/adultfilter</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>45.76.88.20</td>
+    <td>doh.eu.dnswarden.com</td>
+    <td>/uncensored</td>
+    <td>none</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>45.79.120.233</td>
+    <td>doh.in.ahadns.net</td>
+    <td>/dns-query</td>
+    <td>Linode</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.91.92.121</td>
+    <td>doh-ch.blahdns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>45.91.95.12</td>
+    <td>doh.it.ahadns.net</td>
+    <td>/dns-query</td>
+    <td>HostHatch, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>46.101.66.244</td>
+    <td>doh.li</td>
+    <td>/dns-query</td>
+    <td>Digitalocean</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>46.226.108.173</td>
+    <td>dns.hostux.net</td>
+    <td>/ads</td>
+    <td></td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>46.226.108.173</td>
+    <td>dns.hostux.net</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>46.226.109.82</td>
+    <td>dns.hostux.net</td>
+    <td>/ads</td>
+    <td></td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>46.226.109.82</td>
+    <td>dns.hostux.net</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>46.227.200.54</td>
+    <td>rdns.faelix.net</td>
+    <td>/</td>
+    <td>Faelix (TE )</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>46.227.200.55</td>
+    <td>rdns.faelix.net</td>
+    <td>/</td>
+    <td>Faelix (TE )</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>46.239.223.80</td>
+    <td>dns.flatuslifir.is</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>51.15.124.208</td>
+    <td>dnsnl.alekberg.net</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>51.158.147.50</td>
+    <td>resolver-eu.lelux.fi</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>51.38.83.141</td>
+    <td>dns.oszx.co</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5.1.66.255</td>
+    <td>doh.ffmuc.net</td>
+    <td>/</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5.1.66.255</td>
+    <td>doh.ffmuc.net</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5.1.66.255</td>
+    <td>doh.ffmuc.net</td>
+    <td>/query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5.1.66.255</td>
+    <td>doh.ffmuc.net</td>
+    <td>/resolve</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>51.79.176.85</td>
+    <td>doh1.b-cdn.net</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>51.79.176.85</td>
+    <td>doh1.blahdns.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5.253.114.91</td>
+    <td>uk.adhole.org</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5.2.75.75</td>
+    <td>doh.nl.ahadns.net</td>
+    <td>/dns-query</td>
+    <td>Liteserver DRN VPS</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>68.183.253.200</td>
+    <td>dns1.ryan-palmer.com</td>
+    <td>/dns-query</td>
+    <td>DigitalOcean, LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>72.11.134.90</td>
+    <td>dns.wevpn.com</td>
+    <td>/dns-query</td>
+    <td>QuadraNet Enterprises LLC</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>72.11.134.91</td>
+    <td>dns-weblock.wevpn.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>75.75.77.99</td>
+    <td>doh.xfinity.com</td>
+    <td>/dns-query</td>
+    <td>Comcast Cable Communications Holdings, Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>freedns.controld.com</td>
+    <td>/dns-query</td>
+    <td>Controld Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>freedns.controld.com</td>
+    <td>/p0</td>
+    <td>Controld Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>freedns.controld.com</td>
+    <td>/p1</td>
+    <td>Controld Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>freedns.controld.com</td>
+    <td>/p2</td>
+    <td>Controld Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>freedns.controld.com</td>
+    <td>/p3</td>
+    <td>Controld Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>freedns.controld.com</td>
+    <td>/query</td>
+    <td>Controld Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>freedns.controld.com</td>
+    <td>/resolve</td>
+    <td>Controld Inc</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p0.freedns.controld.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p0.freedns.controld.com</td>
+    <td>/query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p0.freedns.controld.com</td>
+    <td>/resolve</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p1.freedns.controld.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p1.freedns.controld.com</td>
+    <td>/query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p1.freedns.controld.com</td>
+    <td>/resolve</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p2.freedns.controld.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p2.freedns.controld.com</td>
+    <td>/query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p2.freedns.controld.com</td>
+    <td>/resolve</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p3.freedns.controld.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p3.freedns.controld.com</td>
+    <td>/query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.2.11</td>
+    <td>p3.freedns.controld.com</td>
+    <td>/resolve</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.21.21</td>
+    <td>arashi.eu.org</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>76.76.21.21</td>
+    <td>arashi.eu.org</td>
+    <td>/resolve</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>78.46.244.143</td>
+    <td>doh-de.blahdns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>81.90.180.173</td>
+    <td>dns.comss.one</td>
+    <td>/dns-query</td>
+    <td>HostiMan.ru</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>84.17.37.209</td>
+    <td>doh2.b-cdn.net</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>84.17.37.209</td>
+    <td>doh2.blahdns.com</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>86.106.103.153</td>
+    <td>dns2.nextdns.io</td>
+    <td>/</td>
+    <td>Bestnet Service SRL</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>86.106.103.153</td>
+    <td>dns2.nextdns.io</td>
+    <td>/dns-query</td>
+    <td>Bestnet Service SRL</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>86.106.103.153</td>
+    <td>dns2.nextdns.io</td>
+    <td>/query</td>
+    <td>Bestnet Service SRL</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>86.106.103.153</td>
+    <td>dns2.nextdns.io</td>
+    <td>/resolve</td>
+    <td>Bestnet Service SRL</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>8.8.4.4</td>
+    <td>8888.google</td>
+    <td>/dns-query</td>
+    <td>Google Public DNS</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>8.8.4.4</td>
+    <td>dns.google</td>
+    <td>/dns-query</td>
+    <td>Google Public DNS</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>8.8.4.4</td>
+    <td>dns.google.com</td>
+    <td>/dns-query</td>
+    <td>Google Public DNS</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>8.8.8.8</td>
+    <td>8888.google</td>
+    <td>/dns-query</td>
+    <td>Google Public DNS</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>8.8.8.8</td>
+    <td>dns.google</td>
+    <td>/dns-query</td>
+    <td>Google Public DNS</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>8.8.8.8</td>
+    <td>dns.google.com</td>
+    <td>/dns-query</td>
+    <td>Google Public DNS</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>89.233.43.71</td>
+    <td>unicast.censurfridns.dk</td>
+    <td>/</td>
+    <td>WEBPARTNER</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>89.233.43.71</td>
+    <td>unicast.censurfridns.dk</td>
+    <td>/dns-query</td>
+    <td>WEBPARTNER</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>89.233.43.71</td>
+    <td>unicast.uncensoreddns.org</td>
+    <td>/</td>
+    <td>WEBPARTNER</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>89.233.43.71</td>
+    <td>unicast.uncensoreddns.org</td>
+    <td>/dns-query</td>
+    <td>WEBPARTNER</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>91.230.211.67</td>
+    <td>dns.east.comss.one</td>
+    <td>/dns-query</td>
+    <td>Optibit LLC</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>91.239.100.100</td>
+    <td>anycast.censurfridns.dk</td>
+    <td>/</td>
+    <td>Thomas Steen Rasmussen</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>91.239.100.100</td>
+    <td>anycast.censurfridns.dk</td>
+    <td>/dns-query</td>
+    <td>Thomas Steen Rasmussen</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>91.239.100.100</td>
+    <td>anycast.uncensoreddns.org</td>
+    <td>/</td>
+    <td>Thomas Steen Rasmussen</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>91.239.100.100</td>
+    <td>anycast.uncensoreddns.org</td>
+    <td>/dns-query</td>
+    <td>Thomas Steen Rasmussen</td>
+    <td>S</td>
+  </tr>
+  <tr>
+    <td>92.223.109.31</td>
+    <td>dns.east.comss.one</td>
+    <td>/dns-query</td>
+    <td>G-Core Labs S.A</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>92.223.65.71</td>
+    <td>dns.comss.one</td>
+    <td>/dns-query</td>
+    <td>GCL</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>93.104.213.190</td>
+    <td>doh.this.web.id</td>
+    <td>/dns-query</td>
+    <td>Contabo GmbH</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td>94.140.14.140</td>
+    <td>dns-unfiltered.adguard.com</td>
+    <td>/dns-query</td>
+    <td>AdGuard Software Limited</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>94.140.14.141</td>
+    <td>dns-unfiltered.adguard.com</td>
+    <td>/dns-query</td>
+    <td>AdGuard Software Limited</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>94.140.14.14</td>
+    <td>dns.adguard.com</td>
+    <td>/dns-query</td>
+    <td>AdGuard Software Limited</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>94.140.14.15</td>
+    <td>dns-family.adguard.com</td>
+    <td>/dns-query</td>
+    <td>AdGuard Software Limited</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>94.140.15.15</td>
+    <td>dns.adguard.com</td>
+    <td>/dns-query</td>
+    <td>AdGuard Software Limited</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>94.140.15.16</td>
+    <td>dns-family.adguard.com</td>
+    <td>/dns-query</td>
+    <td>AdGuard Software Limited</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>95.215.19.53</td>
+    <td>dns.njal.la</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>95.216.212.177</td>
+    <td>doh-fi.blahdns.com</td>
+    <td>/dns-query</td>
+    <td>none</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>95.216.229.153</td>
+    <td>fi.doh.dns.snopyta.org</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>95.217.213.94</td>
+    <td>dns-doh.dnsforfamily.com</td>
+    <td>/dns-query</td>
+    <td>HETZNER-DC</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>95.217.25.217</td>
+    <td>eu1.dns.lavate.ch</td>
+    <td>/dns-query</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9.9.9.10</td>
+    <td>dns10.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Quad9</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>9.9.9.10</td>
+    <td>dns-nosec.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Quad9</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>9.9.9.11</td>
+    <td>dns11.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Quad9</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>9.9.9.12</td>
+    <td>dns12.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Quad9</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>9.9.9.13</td>
+    <td>dns13.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Quad9</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>9.9.9.9</td>
+    <td>dns9.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Quad9</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>9.9.9.9</td>
+    <td>dns.quad9.net</td>
+    <td>/dns-query</td>
+    <td>Quad9</td>
+    <td>A</td>
+  </tr>
+                                    </tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+
+										</div>
+										<div class="tab-pane fade" id="pills-dane-nobd-doh" role="tabpanel" aria-labelledby="pills-dane-tab-nobd-doh">
+																<div class="card">
+
+																	<div class="card-body">
+																		<div class="table-responsive">
+																			<table class="table mt-3" >
+																				<thead>
+																					<tr>
+																						<th>#</th>
+																						<th>Available</th>
+																					</tr>
+																				</thead>
+
+																				 <tbody>
+                                        <tr>
+    <td>1</td>
+    <td>https://dnsprivacy.org/public_resolvers/</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>https://kb.adguard.com/en/general/dns-providers</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>https://github.com/curl/curl/wiki/DNS-over-HTTPS</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>https://wiki.ipfire.org/dns/public-servers</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>https://github.com/mili-tan/AuroraDNS.GUI/blob/5a03b4d02d7081ea63ec4857b6bc1eb60e2808ce/List/DoH.list</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>https://github.com/oneoffdallas/dohservers</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>https://dns.sb/doh/</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>https://www.dnslify.com/services/resolver/</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>https://libredns.gr/</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-tls/</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>https://www.pacnog.org/pacnog24/presentations/DoT-DoH-DNS-Privacy.pdf</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>https://applied-privacy.net/services/dns/</td>
+  </tr>
+                                    </tbody>
+																			</table>
+																		</div>
+																	</div>
+																</div>
+
+										</div>
+
+
+
+
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+						</div>
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Custom template | don't include it in your project! -->
+
+		<!-- End Custom template -->
+	</div>
+	<!--   Core JS Files   -->
+	<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="assets/js/core/popper.min.js"></script>
+	<script src="assets/js/core/bootstrap.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+	<!-- jQuery Scrollbar -->
+	<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+
+	<!-- Chart JS -->
+	<script src="assets/js/plugin/chart.js/chart.min.js"></script>
+
+	<!-- jQuery Sparkline -->
+	<script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+	<!-- Chart Circle -->
+	<script src="assets/js/plugin/chart-circle/circles.min.js"></script>
+
+	<!-- Datatables -->
+	<script src="assets/js/plugin/datatables/datatables.min.js"></script>
+
+	<!-- Bootstrap Notify -->
+	<script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+	<!-- jQuery Vector Maps -->
+	<script src="assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+	<script src="assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+	<!-- Sweet Alert -->
+	<script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+	<!-- Atlantis JS -->
+	<script src="assets/js/atlantis.min.js"></script>
+
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="assets/js/setting-demo.js"></script>
+	<script src="assets/js/demo.js"></script>
+	<script>
+		$('#lineChart').sparkline([102,109,120,99,110,105,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: '#177dff',
+			fillColor: 'rgba(23, 125, 255, 0.14)'
+		});
+
+		$('#lineChart2').sparkline([99,125,122,105,110,124,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: '#f3545d',
+			fillColor: 'rgba(243, 84, 93, .14)'
+		});
+
+		$('#lineChart3').sparkline([105,103,123,100,95,105,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: '#ffa534',
+			fillColor: 'rgba(255, 165, 52, .14)'
+		});
+	</script>
+
+<script >
+		$(document).ready(function() {
+			$('#basic-datatables').DataTable({
+			});
+
+			$('#multi-filter-select').DataTable( {
+				"pageLength": 5,
+				initComplete: function () {
+					this.api().columns().every( function () {
+						var column = this;
+						var select = $('<select class="form-control"><option value=""></option></select>')
+						.appendTo( $(column.footer()).empty() )
+						.on( 'change', function () {
+							var val = $.fn.dataTable.util.escapeRegex(
+								$(this).val()
+								);
+
+							column
+							.search( val ? '^'+val+'$' : '', true, false )
+							.draw();
+						} );
+
+						column.data().unique().sort().each( function ( d, j ) {
+							select.append( '<option value="'+d+'">'+d+'</option>' )
+						} );
+					} );
+				}
+			});
+
+			// Add Row
+			$('#add-row').DataTable({
+				"pageLength": 5,
+			});
+
+			var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
+
+			$('#addRowButton').click(function() {
+				$('#add-row').dataTable().fnAddData([
+					$("#addName").val(),
+					$("#addPosition").val(),
+					$("#addOffice").val(),
+					action
+					]);
+				$('#addRowModal').modal('hide');
+
+			});
+		});
+	</script>
+
+<script >
+		$(document).ready(function() {
+			$('#basic-datatables-1').DataTable({
+			});
+
+			$('#multi-filter-select').DataTable( {
+				"pageLength": 5,
+				initComplete: function () {
+					this.api().columns().every( function () {
+						var column = this;
+						var select = $('<select class="form-control"><option value=""></option></select>')
+						.appendTo( $(column.footer()).empty() )
+						.on( 'change', function () {
+							var val = $.fn.dataTable.util.escapeRegex(
+								$(this).val()
+								);
+
+							column
+							.search( val ? '^'+val+'$' : '', true, false )
+							.draw();
+						} );
+
+						column.data().unique().sort().each( function ( d, j ) {
+							select.append( '<option value="'+d+'">'+d+'</option>' )
+						} );
+					} );
+				}
+			});
+
+			// Add Row
+			$('#add-row').DataTable({
+				"pageLength": 5,
+			});
+
+			var action = '<td> <div class="form-button-action"> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit Task"> <i class="fa fa-edit"></i> </button> <button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-danger" data-original-title="Remove"> <i class="fa fa-times"></i> </button> </div> </td>';
+
+			$('#addRowButton').click(function() {
+				$('#add-row').dataTable().fnAddData([
+					$("#addName").val(),
+					$("#addPosition").val(),
+					$("#addOffice").val(),
+					action
+					]);
+				$('#addRowModal').modal('hide');
+
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+freedns.controld.com,p1
+freedns.controld.com,p2
+freedns.controld.com,p3
+freedns.controld.com,p0
+doh.asia.dnswarden.com,uncensored
+doh.asia.dnswarden.com,adblock
+doh.cleanbrowsing.org,doh/family-filter/
+doh.asia.dnswarden.com,adultfilter
+doh.eu.dnswarden.com,adblock
+doh.eu.dnswarden.com,uncensored
+doh.eu.dnswarden.com,adultfilter
+doh.us.dnswarden.com,adblock
+doh.us.dnswarden.com,uncensored
+doh.us.dnswarden.com,adultfilter
+berd.moe,dns
+doh.libredns.gr,ads
+dns.hostux.net,ads

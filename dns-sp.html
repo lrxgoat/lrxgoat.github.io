@@ -159,19 +159,19 @@
 						<div align="center">
 								<h1 class="text-white pb-2 fw-bold">DNS Strict Privacy Server Management</h1>
  v							</div>
-							<h3 class="text-white op-7 mb-2"> &nbsp&nbsp&nbsp  The DNS privacy protection mechanisms, DNS over TLS (DOT) and DNS over HTTPS (DOH),
+							<h3 class="text-white op-7 mb-2"> &nbsp&nbsp&nbsp  The DNS privacy protection mechanisms, DNS over TLS (DoT) and DNS over HTTPS (DoH),
                                     only work correctly if both the server and client support the Strict Privacy profile and no vulnerability exists in the implemented TLS/HTTPS.<br />
                                    &nbsp&nbsp&nbsp According to the requirements of TLS and HTTPS, the Strict Privacy
                                         profile has the following two premises: 1) The server
                                         should provide a PKIX certificate or a DNSSEC-validated chain
                                         to a TLSA record. 2) The client should obtain the IP and
                                         corresponding domain of the connecting server. Hence, the main subjects in our paper are
-                                            DNS Strict Privacy (DNS-SP), which contain DOT-SP and
-                                            DOH-SP. DNS-SP server not only support DNS encryption
+                                            DNS Strict Privacy (DNS-SP), which contain DoT-SP and
+                                            DoH-SP. DNS-SP server not only support DNS encryption
                                             but also are equipped with a pair of available (IP, domain).<br />
 
 								Due to the rules we used for assembling the DNS-SP
-                                                                list, the real configuration of DOT/DOH servers would
+                                                                list, the real configuration of DoT/DoH servers would
                                                                 be <strong style="color: red">far worse</strong> than our analysis result on DNS-SP servers.
                                                                 The details of the applied rules can be find in our paper.
 							</h3>
@@ -185,7 +185,7 @@
 				<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
-									<h4 class="card-title">DOT-SP Recursive Resolver</h4>
+									<h4 class="card-title">DoT-SP Recursive Resolver</h4>
 								</div>
 								<div class="card-body">
 									<div class="row">
@@ -260,7 +260,7 @@
 					<div class="col-md-12">
 							<div class="card">
 								<div class="card-header">
-									<h4 class="card-title">DOH-SP Recursive Resolver</h4>
+									<h4 class="card-title">DoH-SP Recursive Resolver</h4>
 								</div>
 								<div class="card-body">
 									<div class="row">
@@ -343,10 +343,10 @@
 										<div class="col-10 col-md-2">
 											<div class="nav flex-column nav-pills nav-secondary nav-pills-no-bd" id="v-pills-tab-without-border" role="tablist" aria-orientation="vertical">
 <!--										<li class="nav-item">-->
-											<a class="nav-link active" id="pills-auth-tab-nobd" data-toggle="pill" href="#pills-auth-nobd" role="tab" aria-controls="pills-auth-nobd" aria-selected="true">DOT-SP</a>
+											<a class="nav-link active" id="pills-auth-tab-nobd" data-toggle="pill" href="#pills-auth-nobd" role="tab" aria-controls="pills-auth-nobd" aria-selected="true">DoT-SP</a>
 <!--										</li>-->
 <!--										<li class="nav-item">-->
-											<a class="nav-link" id="pills-auth-tab-nobd-doh" data-toggle="pill" href="#pills-auth-nobd-doh" role="tab" aria-controls="pills-auth-nobd-doh" aria-selected="false">DOH-SP</a>
+											<a class="nav-link" id="pills-auth-tab-nobd-doh" data-toggle="pill" href="#pills-auth-nobd-doh" role="tab" aria-controls="pills-auth-nobd-doh" aria-selected="false">DoH-SP</a>
 
 													</div>
 										</div>

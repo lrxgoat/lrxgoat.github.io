@@ -58,7 +58,7 @@ var ctx = document.getElementById('statisticsChart').getContext('2d');
 var statisticsChart = new Chart(ctx, {
 	type: 'line',
 	data: {
-		labels: ["2021-11", "2021-12", "2022-01", "2022-02", "2022-03", "2022-04"],
+		labels: ["2021-11", "2021-12", "2022-01", "2022-02", "2022-03", "2022-04", "2022-05", "2022-06", "2022-07", "2022-08", "2022-09"],
 		datasets: [{
 			label: "DOT",
 			borderColor: '#fdaf4b',
@@ -68,7 +68,7 @@ var statisticsChart = new Chart(ctx, {
 			legendColor: '#fdaf4b',
 			fill: true,
 			borderWidth: 2,
-			data: [18184, 21329, 21342, 20862, 21727, 21940]
+			data: [18184, 21329, 20862, 21342, 21727, 21940,20655, 20890, 21029, 21223, 21073]
 		}, {
 			label: "DOH",
 			borderColor: '#177dff',
@@ -78,7 +78,7 @@ var statisticsChart = new Chart(ctx, {
 			legendColor: '#177dff',
 			fill: true,
 			borderWidth: 2,
-			data: [23195, 25880, 24949, 26534, 27112, 27378]
+			data: [23195, 26880 ,26534, 27112, 24940, 27387, 23633, 23864, 25126,26543, 25974]
 		}]
 	},
 	options : {
